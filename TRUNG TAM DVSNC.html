@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm Dịch vụ Sự nghiệp Công phường Bình Minh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function showNews(id) {
+            document.querySelectorAll('.news-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Thanh thông tin trên cùng -->
+    <div class="bg-blue-900 text-white text-xs py-2 px-4 flex justify-between items-center">
+        <span>Hôm nay: Thứ Hai, 20 tháng 7, 2026 | 📍 194 Nguyễn Văn Thảnh, Khóm Thành Phước, Phường Bình Minh, Tỉnh Vĩnh Long</span>
+        <button class="bg-yellow-600 hover:bg-yellow-700 px-3 py-1 rounded font-bold uppercase text-[10px] text-white">Quản Trị Đăng Tin</button>
+    </div>
+
+    <!-- Tiêu đề và Logo -->
+    <header class="bg-white shadow-md border-b-4 border-blue-800">
+        <div class="container mx-auto px-4 py-4 flex items-center gap-6">
+            <div class="w-24 h-24 flex-shrink-0">
+                <div class="w-full h-full bg-blue-100 border-2 border-blue-800 rounded-full flex items-center justify-center text-blue-900 font-bold italic">
+                    [Logo]
+                </div>
+            </div>
+            <div>
+                <h1 class="text-3xl font-extrabold text-blue-900 uppercase leading-tight">Trung tâm Dịch vụ Sự nghiệp Công</h1>
+                <h2 class="text-xl text-blue-700">Phường Bình Minh - Tỉnh Vĩnh Long</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-blue-800 text-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-6 py-3 font-bold text-sm uppercase">
+                <button onclick="showSection('home-section')" class="hover:text-yellow-300">Trang chủ</button>
+                <button onclick="showSection('about-section')" class="hover:text-yellow-300">Giới thiệu</button>
+                <button onclick="showSection('gallery-section')" class="hover:text-yellow-300">Hình ảnh hoạt động</button>
+                <button onclick="showSection('contact-section')" class="hover:text-yellow-300">Liên hệ</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8 min-h-[400px]">
+        <section id="home-section" class="page-section grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <!-- Nội dung bài 1 -->
+                <article id="news-1" class="news-content bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h1 class="text-2xl font-bold text-blue-900 mb-4">Lễ chào cờ Tổ quốc và sinh hoạt chuyên đề "Người cán bộ Cách mạng"</h1>
+                    <p class="text-gray-700 leading-relaxed text-justify mb-4">Sáng thứ hai, ngày 06/7/2026 tại Trung tâm Hành chính phường Bình Minh, Đảng ủy – UBND – UBMTTQVN phường Bình Minh tổ chức chào cờ Tổ quốc đầu tháng. Tham dự buổi lễ có đồng chí Nguyễn Văn Trung – Bí thư Đảng ủy, Chủ tịch Hội đồng nhân dân phường cùng toàn thể cán bộ, công chức, viên chức.</p>
+                    <p class="text-gray-700 leading-relaxed text-justify">Thực hiện Công văn số 273-CV/TU ngày 25/02/2026 của Ban Thường vụ Tỉnh ủy, buổi lễ kết hợp sinh hoạt chuyên đề về học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh với tựa đề "Người cán bộ Cách mạng".</p>
+                </article>
+                
+                <!-- Nội dung bài 2 -->
+                <article id="news-2" class="news-content bg-white p-8 rounded-lg shadow-sm border border-gray-200 hidden">
+                    <h1 class="text-2xl font-bold text-blue-900 mb-4">Hội nghị Đảng ủy phường Bình Minh lần thứ tư - Sơ kết 6 tháng đầu năm 2026</h1>
+                    <p class="text-gray-700 leading-relaxed text-justify mb-4">Sáng ngày 08/7/2026, tại Hội trường Trung tâm hành chính, Đảng ủy phường tổ chức Hội nghị lần thứ tư sơ kết tình hình 6 tháng đầu năm và triển khai phương hướng 6 tháng cuối năm 2026. Hội nghị vinh dự đón tiếp đồng chí Nguyễn Quỳnh Thiện – Tỉnh ủy viên, Phó Chủ tịch UBND tỉnh Vĩnh Long đến chỉ đạo.</p>
+                    <p class="text-gray-700 leading-relaxed text-justify mb-4">Hội nghị đã phân tích thẳng thắn kết quả thực hiện các chỉ tiêu kinh tế - xã hội, an ninh - quốc phòng và xây dựng Đảng. Đồng thời, trao tặng Giấy khen cho 02 tập thể/cá nhân tiêu biểu cấp tỉnh và 07 đảng viên xuất sắc 5 năm liền.</p>
+                    <p class="text-gray-700 leading-relaxed text-justify">Đồng chí Nguyễn Quỳnh Thiện biểu dương những nỗ lực của Đảng bộ và nhấn mạnh nhiệm vụ trọng tâm 6 tháng cuối năm là tiếp tục bám sát chương trình nhiệm kỳ 2025-2030, tăng cường kiểm tra, giám sát và nâng cao chất lượng sinh hoạt chi bộ.</p>
+                </article>
+
+                <div class="mt-8 bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="font-bold text-blue-900 mb-4 border-b pb-2">Danh mục tin tức</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <button onclick="showNews('news-1')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition">Lễ chào cờ đầu tháng 7</button>
+                        <button onclick="showNews('news-2')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm transition">Hội nghị Đảng ủy lần thứ 4</button>
+                    </div>
+                </div>
+            </div>
+            <aside class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 border-t-4 border-blue-700">
+                    <h4 class="font-bold text-lg text-blue-900">Ban Giám Đốc</h4>
+                    <p class="mt-2 text-blue-800 font-semibold">Quyền Giám Đốc: Đồng chí Phan Thị Thúy</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white py-10 mt-10">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+            <div>
+                <h4 class="font-bold uppercase mb-4 text-yellow-400">CỔNG THÔNG TIN ĐIỆN TỬ TRUNG TÂM DỊCH VỤ SỰ NGHIỆP CÔNG</h4>
+                <p class="text-gray-200">Trang thông tin chuyên trách tuyên truyền, phổ biến các nhiệm vụ, phản ánh hoạt động và sự phát triển của Trung tâm Dịch vụ Sự nghiệp Công Phường Bình Minh, Tỉnh Vĩnh Long.</p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-4 text-yellow-400">DANH MỤC LIÊN KẾT NHANH</h4>
+                <ul class="space-y-2">
+                    <li>> Trang chủ</li>
+                    <li>> Giới thiệu</li>
+                    <li>> Hình ảnh hoạt động</li>
+                    <li>> Thông tin liên hệ</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-4 text-yellow-400">THÔNG TIN LIÊN HỆ</h4>
+                <p>📍 Địa chỉ: 194 Nguyễn Văn Thảnh, Khóm Thành Phước, Phường Bình Minh, Tỉnh Vĩnh Long.</p>
+                <p>☎ Điện thoại: (0270) 3.861.222</p>
+                <p>✉ Thư điện tử: dichvusunghiep.binhminh@vinhlong.gov.vn</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 border-t border-blue-700 mt-8 pt-6 text-center text-xs text-gray-400">
+            © 2026 Bản quyền thuộc về Trung tâm Dịch vụ Sự nghiệp Công Phường Bình Minh. Ghi rõ nguồn khi phát hành lại thông tin. | Thiết kế & Tích hợp bởi AI Hệ thống
+        </div>
+    </footer>
+</body>
+</html>
